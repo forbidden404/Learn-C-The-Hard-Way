@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../dbg.h"
+#include "dbg.h"
 
 #define MAX_DATA 100
 
