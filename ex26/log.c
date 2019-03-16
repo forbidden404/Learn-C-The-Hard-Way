@@ -28,6 +28,8 @@ char **read_log_files_list(int *length)
         log_info("File %d: %s", i, g.gl_pathv[i]);
     }
 
+    globfree(&g);
+
     return list;
 
 error:
