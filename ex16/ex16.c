@@ -34,6 +34,8 @@ void Person_destroy(struct Person *who)
 
 void Person_print(struct Person *who)
 {
+    assert(who != NULL);
+
     printf("Name: %s\n", who->name);
     printf("\tAge: %d\n", who->age);
     printf("\tHeight: %d\n", who->height);
